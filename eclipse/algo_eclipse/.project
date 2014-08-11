@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>algo_eclipse</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.python.pydev.PyDevBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.python.pydev.pythonNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>common</name>
+			<type>2</type>
+			<location>/Users/jaigupta/Documents/eclipse/algorithmic-arena/common</location>
+		</link>
+		<link>
+			<name>terminal</name>
+			<type>2</type>
+			<location>/Users/jaigupta/Documents/eclipse/algorithmic-arena/terminal</location>
+		</link>
+	</linkedResources>
+</projectDescription>
