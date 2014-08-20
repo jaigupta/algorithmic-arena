@@ -32,51 +32,56 @@ using namespace std;
 #define debug(args...) {}
 #define debugv(x) {}
 #endif
-typedef long long int   ll;
+typedef long long int ll;
 typedef unsigned long long int ull;
-typedef unsigned int    uint;
-typedef pair<int, int>  pii;
-typedef vector<int>     vi;
-typedef vector<vi>      vii;
-typedef vector<pii>     vpii;
-
+typedef unsigned int uint;
+typedef pair<int, int> pii;
+typedef vector<int> vi;
+typedef vector<vi> vii;
+typedef vector<pii> vpii;
 
 #define BUF 4096
 char ibuf[BUF];
 int ipt = BUF;
 
 int readUInt() {
-    while (ipt < BUF && ibuf[ipt] < '0') ipt++;
-    if (ipt == BUF) {
-	fread(ibuf, 1, BUF, stdin);
-	ipt = 0;
-	while (ipt < BUF && ibuf[ipt] < '0') ipt++;
-    }
-    int n = 0; char neg = 0;
-    if(ipt !=0 && ibuf[ipt-1] == '-') neg = 1;
-    while (ipt < BUF && ibuf[ipt] >= '0') n = (n*10)+(ibuf[ipt++]-'0');
-    if (ipt == BUF) {
-	fread(ibuf, 1, BUF, stdin);
-	ipt = 0;
-	while (ipt < BUF && ibuf[ipt] >= '0') n = (n*10)+(ibuf[ipt++]-'0');
-    }
-    return neg?-n:n;
+  while (ipt < BUF && ibuf[ipt] < '0')
+    ipt++;
+  if (ipt == BUF) {
+    fread(ibuf, 1, BUF, stdin);
+    ipt = 0;
+    while (ipt < BUF && ibuf[ipt] < '0')
+      ipt++;
+  }
+  int n = 0;
+  char neg = 0;
+  if (ipt != 0 && ibuf[ipt - 1] == '-')
+    neg = 1;
+  while (ipt < BUF && ibuf[ipt] >= '0')
+    n = (n * 10) + (ibuf[ipt++] - '0');
+  if (ipt == BUF) {
+    fread(ibuf, 1, BUF, stdin);
+    ipt = 0;
+    while (ipt < BUF && ibuf[ipt] >= '0')
+      n = (n * 10) + (ibuf[ipt++] - '0');
+  }
+  return neg ? -n : n;
 }
 int t_count;
 void work(int t) {
 
 }
-int main()
-{
+int main() {
 #ifdef JAI_ARENA
-	D.init();
+  D.init();
 #endif
-	gint(t_count);
-	REP(ti, t_count) {
-		work(ti+1);
-	}
+  gint(t_count);
+  REP(ti, t_count)
+  {
+    work(ti + 1);
+  }
 #ifdef JAI_ARENA
-	D.end();
+  D.end();
 #endif
-    return 0;
+  return 0;
 }

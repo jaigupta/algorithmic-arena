@@ -6,6 +6,7 @@
 #include <string>
 #include <cstring>
 #include <map>
+#ifndef ECLIPSE
 #include <cstdlib>
 #include <algorithm>
 #include <list>
@@ -26,7 +27,7 @@ using namespace std;
 #define pb           push_back
 #define mp           make_pair
 #ifdef JAI_ARENA
-#include "../debugger.h"
+#include "../../common/cpp/debugger.h"
 #else
 #define debug(args...) {}
 #define debugv(x) {}
@@ -102,3 +103,4 @@ int main()
 #endif
     return 0;
 }
+#endif

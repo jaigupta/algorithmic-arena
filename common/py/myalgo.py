@@ -14,14 +14,14 @@ def fact(n):
     return n*fact(n-1)
 
 def sumOfDigits(n):
-    sum=0
+    vsum=0
     while n>0:
-        sum+=n%10
+        vsum+=n%10
         n/=10
-    return sum
+    return vsum
 
 def ncr(a, b):
-    return fac(a)/(fact(b)*fact(a-b))
+    return fact(a)/(fact(b)*fact(a-b))
 
 ncr=[[0 for i in range(51)] for j in range(51)]
 def computecnr():

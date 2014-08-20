@@ -18,12 +18,12 @@
 		<link>
 			<name>common</name>
 			<type>2</type>
-			<location>/Users/jaigupta/Documents/eclipse/algorithmic-arena/common</location>
+			<locationURI>PARENT-2-PROJECT_LOC/common</locationURI>
 		</link>
 		<link>
 			<name>terminal</name>
 			<type>2</type>
-			<location>/Users/jaigupta/Documents/eclipse/algorithmic-arena/terminal</location>
+			<locationURI>PARENT-2-PROJECT_LOC/terminal</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

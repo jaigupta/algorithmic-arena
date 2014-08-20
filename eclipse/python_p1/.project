@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>python_p1</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.python.pydev.pythonNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>py</name>
+			<type>2</type>
+			<location>/usr/local/google/home/jaigupta/algorithmic-arena/common/py</location>
+		</link>
+	</linkedResources>
+</projectDescription>
