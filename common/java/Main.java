@@ -61,6 +61,12 @@ class InputReader {
     return buf[curChar++];
   }
 
+  public char readChar() {
+    int c=read();
+    while(isSpaceChar(c)) c=read();
+    return (char) c;
+  }
+
   public int readInt() {
     int c = read();
     while (isSpaceChar(c))
